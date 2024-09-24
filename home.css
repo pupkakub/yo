@@ -185,45 +185,47 @@ h2
         word-wrap: break-word;
         box-sizing: border-box;
     }
-    .content {
-        height: 100vh; 
+     .content {
+        height: auto; /* Дозволяємо контенту рости */
         display: grid;
-        grid-template-columns: 20% 40% 40%;
-        grid-template-rows: auto 1fr auto;
-        height: 100vh;
+        grid-template-columns: 1fr; /* Одна колонка */
+        grid-template-rows: auto;
         padding: 0;
-        gap: 0;
+        gap: 20px; /* Відстань між елементами */
         box-sizing: border-box;
-        overflow: hidden;
+        overflow: visible; /* Дозволяємо контенту виходити за межі */
     }
 
     .menu {
-        
+        font-size: 24px;
+        width: 100%; /* Робимо меню на всю ширину */
         padding: 10px;
         box-sizing: border-box;
+        text-align: center; /* Центруємо текст в меню */
     }
     
     .mainPic {
         display: flex;
-        justify-content: center; 
-        align-items: center;   
-        height: calc(100vh - 98px); 
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Адаптивна висота */
+        width: 100%; /* На всю ширину */
+        padding: 0;
     }
     
     #main {
-        max-width: 100%;      
-        height: auto;          
-        display: block;        
-        margin: 0 auto;       
+        max-width: 100%; /* Ширина зображення на 100% контейнера */
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
     
-    #text
-    {
+    #text {
         font-size: 23px;
-        object-fit: contain;
-        flex-wrap: nowrap;
         width: 100%;
-
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: justify;
     }
 }
 

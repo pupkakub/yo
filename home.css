@@ -188,8 +188,8 @@ h2
      .content {
         height: auto; /* Дозволяємо контенту рости */
         display: grid;
-        grid-template-columns: 1fr; /* Одна колонка */
-        grid-template-rows: auto;
+        grid-template-columns: 20% 40% 40%; /* Одна колонка */
+        grid-template-rows: auto 1fr auto;
         padding: 0;
         gap: 20px; /* Відстань між елементами */
         box-sizing: border-box;
@@ -198,7 +198,7 @@ h2
 
     .menu {
         font-size: 24px;
-        width: 100%; /* Робимо меню на всю ширину */
+        width: 20%;
         padding: 10px;
         box-sizing: border-box;
         text-align: center; /* Центруємо текст в меню */

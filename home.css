@@ -201,6 +201,8 @@ h2
             object-fit: contain;
             flex-wrap: nowrap;
             width: 100%;
+            display: flex;
+            flex: 1;
         }
         
     }
@@ -236,6 +238,10 @@ h2
         font-size: 19px;
         width: 100%;
         padding: 10px;
+            object-fit: contain;
+            flex-wrap: nowrap;
+            display: flex;
+            flex: 1;
     }
     h2
     {

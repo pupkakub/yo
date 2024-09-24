@@ -104,6 +104,8 @@ h1
 
 .other
 {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

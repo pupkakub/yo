@@ -198,8 +198,12 @@ h2
     }
 
     .menu {
-        font-size: 24px; 
-        height: 100vh;
+        font-size: 20px;
+        height: auto; /* Змінюємо на автоматичну висоту */
+        width: 100%; /* Ширина 100% для мобільних */
+        min-width: auto;
+        padding: 10px;
+        box-sizing: border-box;
     }
     
     .mainPic {

@@ -169,8 +169,7 @@ h2
     left: 0;
     flex-shrink: 3;
 }
-@media (max-width: 1300px) {
-    @media (max-width: 1300px) {
+@media (max-width: 1300px) { 
         h2 {
             font-size: 28px; 
             width: 100%;
@@ -205,12 +204,13 @@ h2
             flex: 1;
         }
         
-    }
 }
+
 
 @media(max-width: 600px) {
     .content {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
         grid-template-rows: auto auto auto;
         gap: 0;
         padding: 0;
@@ -238,10 +238,10 @@ h2
         font-size: 19px;
         width: 100%;
         padding: 10px;
-            object-fit: contain;
-            flex-wrap: nowrap;
-            display: flex;
-            flex: 1;
+        object-fit: contain;
+        flex-wrap: nowrap;
+        display: flex;
+        flex: 1;
     }
     h2
     {

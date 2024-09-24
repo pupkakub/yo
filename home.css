@@ -218,7 +218,7 @@ h2
     {
         background-color: black;
         display: grid;
-        grid-template-columns: 30% 40% 30%;
+        grid-template-columns: 10% 40% 50%;
         grid-template-rows: auto 1fr auto;
         height: auto;
         padding: 0;

@@ -225,7 +225,7 @@ h2
 
     .content {
         display: grid;
-        grid-template-columns: 100%; /* Усі елементи по одному рядку */
+        grid-template-columns: 30% 40% 40% /* Усі елементи по одному рядку */
         grid-template-rows: auto 1fr auto;
         height: auto;
         padding: 0;
@@ -276,7 +276,7 @@ h2
     h2 {
         font-size: 22px; /* Зменшено розмір шрифту */
         width: 100%; /* На всю ширину */
-        padding: 10px; /* Зменшено padding */
+        padding: 0; /* Зменшено padding */
     }
 }
 

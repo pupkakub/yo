@@ -174,7 +174,8 @@ h2
         h2 {
             font-size: 28px; 
             width: 100%;
-            
+            padding: 0;
+            margin: 5px;
         }
         .menu {
             font-size: 24px; 
@@ -208,7 +209,7 @@ h2
     }
 
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     body {
         font-family: "Anton";
         margin: 0;
@@ -228,7 +229,7 @@ h2
         display: grid;
         grid-template-columns: 30% 40% 40% /* Усі елементи по одному рядку */
         grid-template-rows: auto 1fr auto;
-        height: auto;
+        height: 100vh;
         padding: 0;
         gap: 0;
         box-sizing: border-box;

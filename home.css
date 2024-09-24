@@ -213,7 +213,15 @@ h2
         display: block;
         margin: 0 auto;
     }
-    
+    .other
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        min-width: 250px;
+    }
     #text {
         font-size: 23px;
         width: 100%;
@@ -225,13 +233,7 @@ h2
 
         position: relative;
     }
-    #giraffe
-    {
-        display: flex;
-        position: relative;
-        top: 0;
-        justify-content: space-between;
-    }
+    
 }
 
 

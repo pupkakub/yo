@@ -1,0 +1,254 @@
+body
+{
+    font-family: "Anton";
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+
+h1
+{
+    position: relative;
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    width: 100%;
+    padding: 15px 0 20px 10%;
+    margin: 0;
+    
+    text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);
+    
+    z-index: 1000;
+}
+
+.content
+{   
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    grid-template-rows: auto 1fr auto;
+    height: calc(100vh - 150px); 
+    padding: 0;
+    gap:0;
+    box-sizing: border-box;
+}
+.menu
+{
+    background: linear-gradient(rgb(255, 187, 240), rgb(53, 255, 221));
+    font-size: 35px;
+    padding: 10px;
+    border: solid black;
+    border-width: 5px;
+    border-top: 0;
+    overflow: hidden; 
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: calc(100vh - 80px);
+    border-bottom: 0;
+    z-index: 1500;
+    box-sizing: border-box;
+    min-width: 280px;
+
+    flex-shrink: 0;
+
+    ul li::marker
+    {
+        color: rgb(41, 36, 36);
+    }
+
+    a:link
+    {
+        color: rgb(98, 38, 104);
+    }
+    a:visited
+    {
+        color: rgb(33, 155, 155);
+    }
+    a:hover
+    {
+        color:rgb(95, 255, 228);
+    }
+    a:active
+    {
+        color:rgb(22, 5, 71);
+    }
+
+    #butterfly {
+
+        position: sticky;
+       
+        height: auto;
+        min-width: 75%;
+    }
+}
+
+.mainPic {
+    display: flex;
+    position: relative;
+    height: calc(100vh - 180px);
+    min-width: 250px;
+}
+#main {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    flex-shrink: 1;
+}
+
+.other
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: calc(100vh - 180px);
+    min-width: 250px;
+}
+
+#text
+{
+    height: 100%;
+    font-size: 30px;
+    width: 100%;
+    background: linear-gradient(rgb(53, 255, 221), rgb(255, 187, 240));
+    color:black;
+    padding: 20px;
+    box-sizing: border-box;
+    right: 0;
+    flex:1;
+    min-width: 250px;
+    display: flex;
+    position: relative;
+    border: solid black;
+
+    align-items: center ;
+    flex-wrap: nowrap;
+    
+    border-width: 5px;
+    border-top: 0;
+    border-bottom: 4px;
+    flex-shrink: 1;
+}
+
+#giraffe
+{
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+
+    justify-content: space-between;
+    border: solid black;
+    border-width: 5px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+h2
+{
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    width: 150%;
+    padding: 10px 10% 20px 48.5%;
+    margin: 0;
+
+    text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);
+
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    flex-shrink: 3;
+}
+@media (max-width: 1300px) {
+    @media (max-width: 1300px) {
+        h2 {
+            font-size: 28px; 
+            width: 100%;
+        }
+        .menu {
+            font-size: 24px; 
+        }
+        .content {
+            height: auto; 
+        }
+    
+        .mainPic {
+            display: flex;
+            justify-content: center; 
+            align-items: center;   
+            height: calc(100vh - 180px); 
+        }
+        
+        #main {
+            max-width: 100%;      
+            height: auto;          
+            display: block;        
+            margin: 0 auto;       
+        }
+        #text
+        {
+            font-size: 23px;
+            object-fit: contain;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        
+    }
+}
+
+@media(max-width: 600px)
+{
+    .body
+    {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .content
+    {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: auto 1fr auto;
+        height: auto;
+        padding: 0;
+        gap:0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    #menu
+    {
+        font-size: 20px;
+    }
+    .mainPic {
+        display: flex;
+        justify-content: center; 
+        align-items: center;   
+    }
+    
+    #main {
+        max-width: 100%;      
+        height: auto;          
+        display: block;        
+        margin: 0 auto;       
+    }
+    #text
+    {
+        font-size: 19px;
+        object-fit: contain;
+        flex-wrap: nowrap;
+        flex: 1;    
+        width: 100%;
+    }
+}
+

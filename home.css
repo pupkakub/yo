@@ -175,6 +175,7 @@ h2
 @media (max-width: 1300px) {
     h1{
         font-size: 45px;
+        padding: 10px 0 15px 5%;
     }
 
     h2 {

@@ -240,23 +240,24 @@ h2
         font-size: 18px; /* Зменшено розмір шрифту */
         padding: 5px; /* Зменшено padding */
         min-width: 100%; /* Ширина меню на всю ширину */
-        height: auto; /* Задаємо авто-висоту */
+        height: 100vh; /* Задаємо авто-висоту */
         border-width: 3px;
     }
 
     .mainPic {
-        height: auto; /* Адаптивна висота */
+        height: 100vh; /* Адаптивна висота */
         min-width: 100%; /* Ширина на всю сторінку */
+        display: flex;
+        align-items: center;
     }
 
     #main {
-        width: 100%; /* Ширина зображення на 100% */
-        height: auto; /* Висота буде автоматичною */
+        height: 100%;
         object-fit: cover; /* Пропорційне масштабування зображення */
     }
 
     .other {
-        height: auto; /* Адаптивна висота */
+        height: 100vh; /* Адаптивна висота */
         min-width: 100%; /* Ширина на всю сторінку */
     }
 
@@ -278,7 +279,7 @@ h2
     h2 {
         font-size: 22px; /* Зменшено розмір шрифту */
         width: 100%; /* На всю ширину */
-        padding: 0; /* Зменшено padding */
+        padding: 10px 0 15px 5%;
     }
 }
 

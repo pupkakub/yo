@@ -169,7 +169,8 @@ h2
     left: 0;
     flex-shrink: 3;
 }
-@media (max-width: 1300px) { 
+@media (max-width: 1300px) {
+    @media (max-width: 1300px) {
         h2 {
             font-size: 28px; 
             width: 100%;
@@ -200,11 +201,12 @@ h2
             object-fit: contain;
             flex-wrap: nowrap;
             width: 100%;
-            display: flex;
-            flex: 1;
+
         }
         
+    }
 }
+
 
 
 @media(max-width: 600px) {

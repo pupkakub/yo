@@ -224,7 +224,7 @@ h2
     {
         font-size: 23px;
         object-fit: contain;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 100%;
 
     }

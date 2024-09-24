@@ -175,12 +175,12 @@ h2
 @media (max-width: 1300px) {
     h1{
         font-size: 45px;
-        padding: 10px 0 15px 5%;
     }
 
     h2 {
         font-size: 28px; 
-        width: 100%;
+        width: auto;
+        bottom: 0;
         padding: 10px 0 15px 47%;
     }
      .content {

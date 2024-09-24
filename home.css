@@ -227,7 +227,7 @@ h2
 
     .content {
         display: grid;
-        grid-template-columns: 30% 40% 40% /* Усі елементи по одному рядку */
+        grid-template-columns: 30% 40% 40%;/* Усі елементи по одному рядку */
         grid-template-rows: auto 1fr auto;
         height: 100vh;
         padding: 0;

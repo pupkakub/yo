@@ -171,101 +171,62 @@ h2
 }
 
 @media (max-width: 1300px) {
-    h1 {
+    h1{
         font-size: 45px;
-        text-align: center;
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 28px; 
         width: 100%;
-        padding: 10px 0;
+        padding: 10px 0 15px 47%;
         margin: 5px;
-        text-align: center;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         word-wrap: break-word;
         box-sizing: border-box;
     }
-
-    /* Змінимо структуру на дві колонки для середніх екранів */
-    .content {
+     .content {
+        height: 100vh; 
+        width: 100vw;
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Дві колонки */
-        grid-template-rows: auto;
-        width: 100%;
-        height: auto;
+        grid-template-columns: 20% 40% 40%; 
+        grid-template-rows: auto 1fr auto;
         padding: 0;
-        gap: 10px; /* Відступи між колонками */
+        gap: 0; 
         box-sizing: border-box;
+        overflow: visible; 
     }
 
     .menu {
         font-size: 24px;
         width: 100%;
-        padding: 10px;
-        text-align: left; /* Вирівнюємо текст меню зліва */
-        height: auto; /* Дозволяємо меню розширюватися по висоті */
-        min-width: 0; /* Забираємо фіксовану мінімальну ширину */
-        box-sizing: border-box;
     }
-
+    
     .mainPic {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: auto;
-        width: 100%; /* Додаємо ширину 100% для адаптації */
+        background: black;
+        height: 100%; 
+        width: auto;
         padding: 0;
     }
-
+    
     #main {
-        max-width: 100%;
+        max-width: 100%; 
         height: auto;
         display: block;
         margin: 0 auto;
     }
-
-    /* Контейнер для тексту */
+    
     #text {
         font-size: 23px;
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
         word-wrap: break-word;
-    }
-}
-
-/* Додатковий медіа-запит для малих екранів (наприклад, смартфонів) */
-@media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr; /* Одна колонка для малих екранів */
-        grid-template-rows: auto;
-    }
-
-    .menu {
-        font-size: 20px;
-        width: 100%;
-        padding: 10px;
-        text-align: left;
-        height: auto;
-    }
-
-    .mainPic {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        padding: 0;
-    }
-
-    #main {
-        max-width: 100%;
-        height: auto;
-    }
-
-    #text {
-        font-size: 20px;
-        padding: 15px;
     }
 }
 

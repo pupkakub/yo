@@ -206,49 +206,41 @@ h2
     }
 }
 
-@media(max-width: 600px)
-{
-    body
-    {
-        height: 100vh;
+@media(max-width: 600px) {
+    body {
+        height: auto;
         width: 100vw;
     }
 
-    .content
-    {
-        background-color: black;
-        display: grid;
-        grid-template-columns: 10% 40% 50%;
-        grid-template-rows: auto 1fr auto;
-        height: auto;
-        padding: 0;
-        gap:0;
-        box-sizing: border-box;
-        overflow: hidden;
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        padding: 10px;
     }
-    #menu
-    {
+
+    .menu {
         font-size: 20px;
+        min-width: 100%;
     }
+
     .mainPic {
-        display: flex;
-        justify-content: center; 
-        align-items: center;   
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
-    
+
     #main {
-        max-width: 100%;      
-        height: auto;          
-        display: block;        
-        margin: 0 auto;       
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
-    #text
-    {
+
+    #text {
         font-size: 19px;
-        object-fit: contain;
-        flex-wrap: nowrap;
-        flex: 1;    
         width: 100%;
+        padding: 10px;
     }
 }
 

@@ -93,7 +93,6 @@ h1
     position: relative;
     left: 0;
     height: calc(100vh - 180px);
-    min-width: 250px;
 }
 #main {
     width: 100%;
@@ -101,7 +100,6 @@ h1
     display: flex;
     position: relative;
     left: 0;
-    min-width: 250px;
 }
 
 .other
@@ -227,7 +225,6 @@ h2
         align-items: center;
         background: black;
         padding: 0;
-        min-width: 300px;
     }
     
     #main {

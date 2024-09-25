@@ -163,7 +163,6 @@ h2
     width: 100%;
     padding: 10px 10% 20px 48.5%;
     margin: 0;
-    text-wrap: nowrap;
     text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);
 
     position: sticky;
@@ -185,10 +184,13 @@ h2
 
     h2 {
         font-size: 28px; 
-        width: auto;
-        height: 10%;
-        bottom: 0;
-        z-index: 2000;
+        width: 100%;
+        padding: 10px 0 15px 47%;
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        box-sizing: border-box;
     }
      .content {
         height: auto; 

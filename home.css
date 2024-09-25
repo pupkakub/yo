@@ -246,7 +246,7 @@ h2
         display: flex;
         flex-wrap: nowrap;
         word-wrap: break-word;
-        height: 60%
+        height: 60%;
         position: relative;
     }
     #giraffe

@@ -173,14 +173,14 @@ h2
 }
 
 @media (max-width: 1300px) {
-    body {
-        height: auto; /* Дозволяє висоті тіла автоматично підлаштовуватися */
+    body
+    {
+        height: 100vh;
         width: 100vw;
     }
-
-    h1 {
+    h1{
         font-size: 45px;
-        height: auto; /* Використання auto для висоти, щоб запобігти проблемам з відображенням */
+        height: 15%;
     }
 
     h2 {
@@ -193,13 +193,12 @@ h2
         word-wrap: break-word;
         box-sizing: border-box;
     }
-
-    .content {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr; /* Зміна на фракційні одиниці для кращого адаптування */
-        grid-template-rows: auto 1fr auto; /* Автоматична висота для рядків */
+     .content {
         height: auto; 
-        width: 100%; /* Задати ширину 100% */
+        width: auto;
+        display: grid;
+        grid-template-columns: 20% 40% 40%; 
+        grid-template-rows: 75% 75% 75%;
         padding: 0;
         gap: 0; 
         box-sizing: border-box;
@@ -210,9 +209,8 @@ h2
         font-size: 24px;
         width: 100%;
         z-index: 1500;
-        height: auto; /* Автоматична висота */
     }
-
+    
     .mainPic {
         display: flex;
         width: 100%;
@@ -222,7 +220,7 @@ h2
         background: black;
         padding: 0;
     }
-
+    
     #main {
         max-width: 100%; 
         height: auto;
@@ -230,8 +228,8 @@ h2
         display: block;
         margin: 0 auto;
     }
-
-    .other {
+    .other
+    {
         width: 100%;
         height: auto;
         display: flex;
@@ -239,25 +237,21 @@ h2
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     #text {
         font-size: 23px;
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
-        height: auto; /* Автоматична висота */
+        min-width: 250px;
+        display: flex;
+        flex-wrap: nowrap;
+        word-wrap: break-word;
+        height: 60%
         position: relative;
     }
-
-    #giraffe {
-        height: auto; /* Автоматична висота */
-    }
-}
-
-@media (max-width: 600px) {
-    /* Додатковий медіа-запит для ще менших екранів */
-    .content {
-        grid-template-columns: 1fr; /* Одна колонка для дуже малих екранів */
+    #giraffe
+    {
+        height: 15%;
     }
 }
 

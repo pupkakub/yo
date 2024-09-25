@@ -166,7 +166,7 @@ h2
 
     text-shadow: 2px 2px 5px rgba(46, 255, 151, 0.8);
 
-    
+    position: sticky;
     bottom: 0;
     left: 0;
     flex-shrink: 3;
